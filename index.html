@@ -11,6 +11,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
         rel="stylesheet" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2613259172407686');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent', {
+            content_name: 'Apostila Tapetes Amigurumi',
+            content_category: 'Artesanato / Crochê',
+            content_ids: ['tapetes-amigurumi'],
+            content_type: 'product',
+            value: 27.00,
+            currency: 'BRL'
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2613259172407686&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- UTMify Pixel -->
+    <script>
+        window.pixelId = "699e14785874abf0bbd137b0";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <!-- End UTMify Pixel -->
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -1756,6 +1796,38 @@
         });
         btn.addEventListener('click', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- Meta Pixel – Event Tracking -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fire InitiateCheckout on every CTA that goes to the payment page
+            document.querySelectorAll('a.buy__cta').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    fbq('track', 'InitiateCheckout', {
+                        content_name: 'Apostila Tapetes Amigurumi',
+                        content_ids: ['tapetes-amigurumi'],
+                        content_type: 'product',
+                        num_items: 1,
+                        value: 27.00,
+                        currency: 'BRL'
+                    });
+                });
+            });
+
+            // Fire AddToCart on the hero CTA (interest signal before checkout)
+            document.querySelectorAll('a.hero__cta').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    fbq('track', 'AddToCart', {
+                        content_name: 'Apostila Tapetes Amigurumi',
+                        content_ids: ['tapetes-amigurumi'],
+                        content_type: 'product',
+                        value: 27.00,
+                        currency: 'BRL'
+                    });
+                });
+            });
         });
     </script>
 
