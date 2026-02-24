@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apostila Tapetes Amigurumi – +100 Modelos Exclusivos</title>
+    <meta name="description"
+        content="Transforme sua casa em um espaço acolhedor e único com tapetes amigurumi. Apostila com mais de 100 modelos exclusivos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #222;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 60px 40px;
+        }
+
+        .hero__container {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        /* Left content */
+        .hero__content {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .hero__title {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 900;
+            color: #1a7a45;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero__subtitle {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+
+        .hero__subtitle strong {
+            font-weight: 700;
+            color: #222;
+        }
+
+        .hero__cta {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: #fff;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 20px 44px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 24px rgba(46, 204, 113, 0.35);
+        }
+
+        .hero__cta:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.5);
+        }
+
+        .hero__cta:active {
+            transform: translateY(0);
+        }
+
+        /* Right image */
+        .hero__image-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .hero__image {
+            width: 100%;
+            max-width: 520px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.12));
+        }
+
+        /* ========== SECTION 2: TOQUE MACIO ========== */
+        .s2 {
+            background-color: #d4f5e2;
+            padding: 70px 24px;
+            text-align: center;
+        }
+
+        .s2__inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .s2__title {
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+            font-weight: 900;
+            color: #1a7a45;
+            line-height: 1.25;
+            margin-bottom: 24px;
+        }
+
+        .s2__text {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            color: #333;
+            line-height: 1.75;
+            margin-bottom: 36px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .s2__text strong {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .s2__image-wrap {
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+
+        .s2__image {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        .s2__tagline {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 700;
+            color: #1a7a45;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        /* ========== SECTION 3: O QUE VOCÊ VAI RECEBER ========== */
+        .s3 {
+            background-color: #ffffff;
+            padding: 70px 24px;
+            text-align: center;
+        }
+
+        .s3__title {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 800;
+            color: #1a7a45;
+            margin-bottom: 48px;
+        }
+
+        .s3__cards {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .s3__card {
+            background: #fff;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 16px;
+            padding: 40px 32px;
+            flex: 1 1 220px;
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .s3__card:hover {
+            box-shadow: 0 8px 28px rgba(46, 204, 113, 0.18);
+            transform: translateY(-4px);
+        }
+
+        .s3__icon {
+            width: 52px;
+            height: 52px;
+            color: #2ecc71;
+        }
+
+        .s3__card-text {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a7a45;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* ========== SECTION 4: GALLERY ========== */
+        .s4 {
+            background-color: #2ecc71;
+            padding: 70px 24px;
+            text-align: center;
+        }
+
+        .s4__title {
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 48px;
+            line-height: 1.25;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .s4__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .s4__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .s4__img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .s4__img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+        }
+
+        .s4__label {
+            font-size: 0.95rem;
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        .s4__label strong {
+            font-weight: 800;
+        }
+
+        @media (max-width: 640px) {
+            .s4__grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .s4__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== SECTION 5: O QUE ESTÁ INCLUSO ========== */
+        .s5 {
+            background-color: #f4f4f4;
+            padding: 80px 24px;
+        }
+
+        .s5__inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .s5__title {
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            font-weight: 900;
+            color: #1a7a45;
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        .s5__layout {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 48px 48px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.07);
+        }
+
+        .s5__image-col {
+            flex: 0 0 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .s5__image {
+            width: 100%;
+            max-width: 280px;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.14));
+        }
+
+        .s5__content-col {
+            flex: 1;
+        }
+
+        .s5__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .s5__item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 24px;
+            background: #f7fef9;
+            border-left: 4px solid #2ecc71;
+            border-radius: 12px;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .s5__item:hover {
+            box-shadow: 0 4px 20px rgba(46, 204, 113, 0.15);
+            transform: translateX(4px);
+        }
+
+        .s5__dot {
+            width: 12px;
+            height: 12px;
+            min-width: 12px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .s5__item-text {
+            font-size: 0.97rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .s5__item-text strong {
+            color: #111;
+            font-weight: 800;
+        }
+
+        @media (max-width: 768px) {
+            .s5__layout {
+                flex-direction: column;
+                padding: 32px 24px;
+                gap: 36px;
+            }
+
+            .s5__image-col {
+                flex: none;
+            }
+        }
+
+        /* ========== SECTION 6: DEPOIMENTOS ========== */
+        .s6 {
+            background-color: #ffffff;
+            padding: 80px 24px;
+        }
+
+        .s6__inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .s6__title {
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            font-weight: 900;
+            color: #1a7a45;
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        .s6__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+
+        .s6__card {
+            background: #fff;
+            border: 1px solid #e4e6eb;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .s6__card:hover {
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        .s6__card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px 12px;
+        }
+
+        .s6__avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2ecc71, #1a7a45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .s6__author {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #050505;
+        }
+
+        .s6__date {
+            font-size: 0.78rem;
+            color: #65676b;
+        }
+
+        .s6__text {
+            padding: 0 20px 14px;
+            font-size: 0.93rem;
+            color: #1c1e21;
+            line-height: 1.6;
+        }
+
+        .s6__img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .s6__reactions {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #e4e6eb;
+            font-size: 0.82rem;
+            color: #65676b;
+        }
+
+        .s6__react-icons {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .s6__react-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        .s6__react-icon--love {
+            background: #f33e58;
+        }
+
+        .s6__react-icon--like {
+            background: #1877f2;
+        }
+
+        .s6__react-icon--wow {
+            background: #f7b125;
+        }
+
+        .s6__actions {
+            padding: 6px 8px;
+            display: flex;
+            border-top: 1px solid #e4e6eb;
+        }
+
+        .s6__action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 8px;
+            border: none;
+            background: none;
+            color: #65676b;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.2s;
+        }
+
+        .s6__action-btn:hover {
+            background: #f0f2f5;
+        }
+
+        .s6__action-btn.love {
+            color: #f33e58;
+        }
+
+        @media (max-width: 620px) {
+            .s6__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== SECTION 7: TRUST BADGES ========== */
+        .s7 {
+            background-color: #2ecc71;
+            padding: 60px 24px;
+        }
+
+        .s7__inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .s7__card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 36px 28px;
+            flex: 1 1 220px;
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .s7__card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.14);
+        }
+
+        .s7__icon {
+            width: 64px;
+            height: 64px;
+            color: #e74c8b;
+        }
+
+        .s7__text {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .s7__text strong {
+            font-weight: 800;
+            color: #111;
+        }
+
+        @media (max-width: 620px) {
+            .s7__card {
+                max-width: 100%;
+            }
+        }
+
+        /* ========== PURCHASE SECTION ========== */
+        #comprar {
+            background-color: #ffffff;
+            padding: 0;
+        }
+
+        /* Top banner */
+        .buy__banner {
+            background: linear-gradient(90deg, #e8fdf1, #d0f5e3);
+            text-align: center;
+            padding: 14px 20px;
+            border-bottom: 2px solid #2ecc71;
+        }
+
+        .buy__banner p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 800;
+            color: #1a7a45;
+        }
+
+        /* Main wrapper */
+        .buy__wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 52px 24px 72px;
+            text-align: center;
+        }
+
+        /* Countdown */
+        .buy__countdown {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+
+        .buy__time-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buy__time-num {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #555;
+            line-height: 1;
+        }
+
+        .buy__time-label {
+            font-size: 0.78rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* Offer title */
+        .buy__offer-title {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 900;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        .buy__offer-title span {
+            color: #2ecc71;
+        }
+
+        /* Scarcity */
+        .buy__scarcity {
+            font-size: 0.97rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .buy__scarcity strong {
+            font-weight: 800;
+            color: #111;
+        }
+
+        /* Progress bar */
+        .buy__bar-wrap {
+            background: #e0e0e0;
+            border-radius: 50px;
+            height: 28px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .buy__bar-fill {
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            height: 100%;
+            width: 95%;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 14px;
+        }
+
+        .buy__bar-text {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .buy__bar-pct {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #555;
+        }
+
+        /* Price card */
+        .buy__card {
+            background: #fff;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 12px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Green header strip */
+        .buy__card-header {
+            background: linear-gradient(135deg, #1a7a45, #2ecc71);
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .buy__card-header-tag {
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: 0.02em;
+        }
+
+        .buy__card-header-badge {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50px;
+            padding: 4px 14px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+        /* Two-column body */
+        .buy__card-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        /* Left col: image */
+        .buy__card-img-col {
+            background: linear-gradient(160deg, #f0fdf6, #e8f8ef);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 24px;
+            border-right: 1px solid #eee;
+        }
+
+        .buy__old-price {
+            font-size: 0.88rem;
+            color: #999;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .buy__old-price s {
+            text-decoration: line-through;
+        }
+
+        /* Right col: details */
+        .buy__card-detail-col {
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (max-width: 680px) {
+            .buy__card-body {
+                grid-template-columns: 1fr;
+            }
+
+            .buy__card-img-col {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+        }
+
+        .buy__card-image {
+            width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+            filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
+            transition: transform 0.4s ease;
+        }
+
+        .buy__card-image:hover {
+            transform: scale(1.04);
+        }
+
+        .buy__price {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #1a7a45;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .buy__price sup {
+            font-size: 1.8rem;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+
+        .buy__installment {
+            font-size: 0.92rem;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
+        .buy__installment strong {
+            font-weight: 700;
+        }
+
+        .buy__divider {
+            height: 1px;
+            background: #eee;
+            margin: 16px 0;
+        }
+
+        .buy__checklist {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+
+        .buy__check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .buy__check-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            background: #2ecc71;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .buy__check-icon svg {
+            width: 13px;
+            height: 13px;
+            stroke: #fff;
+            stroke-width: 3;
+            fill: none;
+        }
+
+        .buy__check-item strong {
+            font-weight: 800;
+            color: #111;
+        }
+
+        /* CTA Button */
+        .buy__cta {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            padding: 22px 32px;
+            border-radius: 50px;
+            box-shadow: 0 8px 28px rgba(46, 204, 113, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 20px;
+            animation: pulse-btn 2s infinite;
+        }
+
+        @keyframes pulse-btn {
+
+            0%,
+            100% {
+                box-shadow: 0 8px 28px rgba(46, 204, 113, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 12px 40px rgba(46, 204, 113, 0.7);
+            }
+        }
+
+        .buy__cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(46, 204, 113, 0.55);
+        }
+
+        /* Payment icons */
+        .buy__payment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .buy__payment-badge {
+            background: #f5f5f5;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #555;
+            letter-spacing: 0.03em;
+        }
+
+        .buy__payment-badge.pix {
+            color: #32bcad;
+        }
+
+        .buy__payment-badge.visa {
+            color: #1a1f71;
+        }
+
+        .buy__payment-badge.mc {
+            color: #eb001b;
+        }
+
+        .buy__payment-badge.elo {
+            color: #f9a620;
+        }
+
+        .buy__payment-badge.boleto {
+            color: #444;
+        }
+
+        .buy__urgency {
+            font-size: 0.88rem;
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .buy__urgency strong {
+            color: #c0392b;
+            font-weight: 800;
+        }
+
+        /* ========== GUARANTEE SECTION ========== */
+        .guarantee {
+            background: linear-gradient(160deg, #f0fdf6, #e8f8ef);
+            padding: 80px 24px;
+        }
+
+        .guarantee__inner {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 12px 60px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: stretch;
+        }
+
+        .guarantee__seal-col {
+            background: linear-gradient(160deg, #1a7a45, #2ecc71);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 40px;
+            min-width: 240px;
+            gap: 12px;
+        }
+
+        .guarantee__seal {
+            width: 160px;
+            height: auto;
+            filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
+            transition: transform 0.4s ease;
+        }
+
+        .guarantee__seal:hover {
+            transform: rotate(-4deg) scale(1.07);
+        }
+
+        .guarantee__seal-label {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .guarantee__content {
+            padding: 48px 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .guarantee__eyebrow {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #2ecc71;
+        }
+
+        .guarantee__title {
+            font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+            font-weight: 900;
+            color: #111;
+            line-height: 1.25;
+        }
+
+        .guarantee__title span {
+            color: #e74c8b;
+        }
+
+        .guarantee__text {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .guarantee__text strong {
+            font-weight: 800;
+            color: #111;
+        }
+
+        .guarantee__bullets {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .guarantee__bullet {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.92rem;
+            color: #333;
+        }
+
+        .guarantee__bullet-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .guarantee__bullet-dot svg {
+            width: 11px;
+            height: 11px;
+            stroke: #fff;
+            stroke-width: 3;
+            fill: none;
+        }
+
+        @media (max-width: 640px) {
+            .guarantee__inner {
+                flex-direction: column;
+            }
+
+            .guarantee__seal-col {
+                padding: 36px 24px;
+                min-width: unset;
+            }
+
+            .guarantee__content {
+                padding: 32px 24px;
+            }
+        }
+
+        /* ========== FOOTER ========== */
+        .site-footer {
+            background: #fff;
+            border-top: 1px solid #eee;
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .site-footer__text {
+            font-size: 0.85rem;
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .site-footer__text a {
+            color: #2ecc71;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .site-footer__text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back-to-top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #1a7a45, #2ecc71);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
+            transition: transform 0.2s ease, opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+
+        .back-to-top svg {
+            width: 20px;
+            height: 20px;
+            stroke: #fff;
+            stroke-width: 2.5;
+            fill: none;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 24px 40px;
+                min-height: auto;
+            }
+
+            .hero__container {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero__content {
+                max-width: 100%;
+            }
+
+            .hero__title {
+                font-size: 1.9rem;
+            }
+
+            .hero__image {
+                max-width: 320px;
+            }
+
+            .hero__cta {
+                padding: 18px 36px;
+                font-size: 0.9rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .s3__card {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero__title {
+                font-size: 1.6rem;
+            }
+
+            .hero__image {
+                max-width: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero__container">
+
+            <!-- Left: Text + CTA -->
+            <div class="hero__content">
+                <h1 class="hero__title">Apostila Tapetes Amigurumi – +100 Modelos Exclusivos</h1>
+                <p class="hero__subtitle">
+                    Transforme sua casa em um espaço <strong>acolhedor e único com tapetes amigurumi!</strong>
+                </p>
+                <a href="#comprar" class="hero__cta">Quero Meus Tapetes Agora!</a>
+            </div>
+
+            <!-- Right: Product Image -->
+            <div class="hero__image-wrapper">
+                <img src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/Capas-4-1.png.webp"
+                    alt="Apostila Tapetes Amigurumi com +100 modelos exclusivos" class="hero__image" loading="eager" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: TOQUE MACIO ===== -->
+    <section class="s2">
+        <div class="s2__inner">
+            <h2 class="s2__title">Toque macio, cores que aquecem,<br>modelos que encantam.</h2>
+            <p class="s2__text">
+                Já imaginou cada cômodo da sua casa ganhando mais vida, estilo e aconchego?<br>
+                Com a <strong>Apostila Tapetes Amigurumi</strong>, você terá mais de <strong>100 receitas
+                    exclusivas</strong>
+                para criar tapetes que transformam qualquer ambiente — da entrada ao quarto infantil, da sala à cozinha!
+            </p>
+            <div class="s2__image-wrap">
+                <img src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/amigurumi.perfeito_501457572_18050328923593173_6275472366172734590_n.jpg.webp"
+                    alt="Bebê deitado em tapete amigurumi de leão" class="s2__image" loading="lazy" />
+            </div>
+            <p class="s2__tagline">Seja artesã iniciante ou experiente, você vai construir<br>peças incríveis e
+                diferenciadas.</p>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: O QUE VOCÊ VAI RECEBER ===== -->
+    <section class="s3">
+        <h2 class="s3__title">O que você vai receber:</h2>
+        <div class="s3__cards">
+
+            <!-- Card 1 -->
+            <div class="s3__card">
+                <svg class="s3__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0121 9.414V19a2 2 0 01-2 2z" />
+                </svg>
+                <p class="s3__card-text">Apostila digital com 100 receitas EXCLUSIVAS (PDF)</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="s3__card">
+                <svg class="s3__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h10" />
+                </svg>
+                <p class="s3__card-text">Passo a passo com imagens, 100% em português</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="s3__card">
+                <svg class="s3__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+                <p class="s3__card-text">Envio imediato por WhatsApp e e-mail</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: GALLERY ===== -->
+    <section class="s4">
+        <h2 class="s4__title">Veja as Receitas que você irá receber!</h2>
+        <div class="s4__grid">
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/amigurumii.brasiil_503035730_18059305571259081_3140412658219237977_n.jpg.webp"
+                    alt="Tapete Ovelha" />
+                <p class="s4__label">Tapete <strong>Ovelha</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/amigurumii.brasiil_502212347_18059305589259081_1430728050142307714_n.jpg.webp"
+                    alt="Tapete Leão" />
+                <p class="s4__label">Tapete <strong>Leão</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/amigurumi.perfeito_503893069_18051622955593173_1033361051439883817_n.jpg.webp"
+                    alt="Tapete Dino" />
+                <p class="s4__label">Tapete <strong>Dino</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/ChatGPT-Image-17-de-jul.-de-2025-17_00_31.png.webp"
+                    alt="Tapete Panda" />
+                <p class="s4__label">Tapete <strong>Panda</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/3-9-1024x1024.jpg.webp"
+                    alt="Tapete Hello Kitty" />
+                <p class="s4__label">Tapete <strong>Hello Kitty</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/2-6-1024x1024.jpg.webp"
+                    alt="Tapetes Banheiro" />
+                <p class="s4__label">Tapetes <strong>Banheiro</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/ChatGPT-Image-17-de-jul.-de-2025-17_22_50.png.webp"
+                    alt="Tapete Elefante" />
+                <p class="s4__label">Tapete <strong>Elefante</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/ChatGPT-Image-17-de-jul.-de-2025-17_05_32.png.webp"
+                    alt="Tapete Unicórnio" />
+                <p class="s4__label">Tapete <strong>Unicórnio</strong></p>
+            </div>
+
+            <div class="s4__item">
+                <img class="s4__img" loading="lazy"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/Tapetes-Arts-1024x1024.jpg.webp"
+                    alt="Tapetes Cozinha" />
+                <p class="s4__label">Tapetes <strong>Cozinha</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: O QUE ESTÁ INCLUSO ===== -->
+    <section class="s5">
+        <div class="s5__inner">
+            <h2 class="s5__title">O que está incluso no pacote</h2>
+            <div class="s5__layout">
+
+                <!-- Image -->
+                <div class="s5__image-col">
+                    <img class="s5__image"
+                        src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/Capas-4-1.png.webp"
+                        alt="Apostila Tapetes Amigurumi" loading="lazy" />
+                </div>
+
+                <!-- List -->
+                <div class="s5__content-col">
+                    <ul class="s5__list">
+                        <li class="s5__item">
+                            <div class="s5__dot"></div>
+                            <p class="s5__item-text"><strong>Apostila exclusiva</strong> Tapetes Amigurumi &mdash; mais
+                                de 100 receitas em PDF prontas para imprimir ou acessar no celular.</p>
+                        </li>
+                        <li class="s5__item">
+                            <div class="s5__dot"></div>
+                            <p class="s5__item-text"><strong>Bônus:</strong> Tapetes Amigurumi para Banheiro, Sala e
+                                Cozinha! (Em PDF)</p>
+                        </li>
+                        <li class="s5__item">
+                            <div class="s5__dot"></div>
+                            <p class="s5__item-text"><strong>Mini-guia: &ldquo;Como encantar nas redes com vídeos de
+                                    seus Tapetes&rdquo;</strong> &mdash; Dicas práticas pra gravar, apresentar e bombar
+                                seus vídeos com fofura e engajamento!</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 6: DEPOIMENTOS ===== -->
+    <section class="s6">
+        <div class="s6__inner">
+            <h2 class="s6__title">O que outras artesãs dizem:</h2>
+            <div class="s6__grid">
+
+                <!-- Card 1 -->
+                <div class="s6__card">
+                    <div class="s6__card-header">
+                        <div class="s6__avatar">MC</div>
+                        <div>
+                            <div class="s6__author">Maria Carla</div>
+                            <div class="s6__date">🌎 Público &middot; 2 dias atrás</div>
+                        </div>
+                    </div>
+                    <p class="s6__text">Meu banheiro nunca foi tão estiloso! Os tapetes são lindos e super fáceis de
+                        fazer com essa apostila. ❤️</p>
+                    <img class="s6__img"
+                        src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/DPpp1-1184x1536.jpg.webp"
+                        alt="Depoimento Maria Carla" loading="lazy" />
+                    <div class="s6__reactions">
+                        <div class="s6__react-icons">
+                            <div class="s6__react-icon s6__react-icon--love">❤️</div>
+                            <div class="s6__react-icon s6__react-icon--like">👍</div>
+                            <div class="s6__react-icon s6__react-icon--wow">😮</div>
+                            <span style="margin-left:6px">121</span>
+                        </div>
+                        <span>12 comentários</span>
+                    </div>
+                    <div class="s6__actions">
+                        <button class="s6__action-btn love">❤️ Love</button>
+                        <button class="s6__action-btn">💬 Comment</button>
+                        <button class="s6__action-btn">🔗 Share</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="s6__card">
+                    <div class="s6__card-header">
+                        <div class="s6__avatar">FM</div>
+                        <div>
+                            <div class="s6__author">Fernanda Marques</div>
+                            <div class="s6__date">🌎 Público &middot; 5 dias atrás</div>
+                        </div>
+                    </div>
+                    <p class="s6__text">Fiz esse tapete para minha filha e ela simplesmente amou, melhor amigurumi que
+                        já fiz, todos ficaram encantados! 🦡✨</p>
+                    <img class="s6__img"
+                        src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/DPpp2-1184x1536.jpg.webp"
+                        alt="Depoimento Fernanda Marques" loading="lazy" />
+                    <div class="s6__reactions">
+                        <div class="s6__react-icons">
+                            <div class="s6__react-icon s6__react-icon--love">❤️</div>
+                            <div class="s6__react-icon s6__react-icon--like">👍</div>
+                            <div class="s6__react-icon s6__react-icon--wow">😮</div>
+                            <span style="margin-left:6px">121</span>
+                        </div>
+                        <span>12 comentários</span>
+                    </div>
+                    <div class="s6__actions">
+                        <button class="s6__action-btn love">❤️ Love</button>
+                        <button class="s6__action-btn">💬 Comment</button>
+                        <button class="s6__action-btn">🔗 Share</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 7: TRUST BADGES ===== -->
+    <section class="s7">
+        <div class="s7__inner">
+
+            <!-- Card 1 -->
+            <div class="s7__card">
+                <svg class="s7__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+                <p class="s7__text">A plataforma de pagamento é <strong>certificada e aprovada.</strong></p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="s7__card">
+                <svg class="s7__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                <p class="s7__text">Seus dados financeiros permanecerão <strong>totalmente secretos e
+                        protegidos.</strong></p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="s7__card">
+                <svg class="s7__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <p class="s7__text">Seu acesso será <strong>entregue por Email e WhatsApp.</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PURCHASE SECTION ===== -->
+    <section id="comprar">
+
+        <!-- Top Banner -->
+        <div class="buy__banner">
+            <p>🧶 Os Tapetes estão esperando por você...</p>
+        </div>
+
+        <div class="buy__wrapper">
+
+            <!-- Countdown -->
+            <div class="buy__countdown">
+                <div class="buy__time-block">
+                    <span class="buy__time-num" id="cnt-min">15</span>
+                    <span class="buy__time-label">Minutos</span>
+                </div>
+                <div class="buy__time-block">
+                    <span class="buy__time-num" id="cnt-sec">00</span>
+                    <span class="buy__time-label">Segundos</span>
+                </div>
+            </div>
+
+            <!-- Offer Title -->
+            <h2 class="buy__offer-title">Oferta Incrível por <span>tempo limitado!</span></h2>
+
+            <!-- Scarcity -->
+            <p class="buy__scarcity">⏳ Atenção: apenas <strong>50 vagas</strong> disponíveis com esse desconto e bônus.
+            </p>
+
+            <!-- Progress Bar -->
+            <div class="buy__bar-wrap">
+                <div class="buy__bar-fill">
+                    <span class="buy__bar-text">Vagas preenchidas</span>
+                </div>
+                <span class="buy__bar-pct">95%</span>
+            </div>
+
+            <!-- Price Card -->
+            <div class="buy__card">
+
+                <!-- Green header strip -->
+                <div class="buy__card-header">
+                    <span class="buy__card-header-tag">🧶 Somente hoje</span>
+                    <span class="buy__card-header-badge">De <s style="opacity:0.7">R$197</s> por R$27</span>
+                </div>
+
+                <!-- Two-column body -->
+                <div class="buy__card-body">
+
+                    <!-- Left: image -->
+                    <div class="buy__card-img-col">
+                        <p class="buy__old-price">De <s>R$197,00</s> por apenas</p>
+                        <img class="buy__card-image"
+                            src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/07/Capas-4-1.png.webp"
+                            alt="Apostila Tapetes Amigurumi" loading="lazy" />
+                    </div>
+
+                    <!-- Right: price + details -->
+                    <div class="buy__card-detail-col">
+                        <div class="buy__price"><sup>R$</sup>27</div>
+                        <p class="buy__installment">Ou <strong>6x</strong> de <strong>R$ 5,68</strong></p>
+
+                        <div class="buy__divider"></div>
+
+                        <ul class="buy__checklist">
+                            <li class="buy__check-item">
+                                <span class="buy__check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span><strong>Apostila Exclusiva</strong> Tapetes Amigurumi</span>
+                            </li>
+                            <li class="buy__check-item">
+                                <span class="buy__check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span><strong>Passo a passo</strong> Em português</span>
+                            </li>
+                            <li class="buy__check-item">
+                                <span class="buy__check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span><strong>Pagamento único</strong> Acesso vitalício</span>
+                            </li>
+                            <div class="buy__divider"></div>
+                            <li class="buy__check-item">
+                                <span class="buy__check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span><strong>Mais de 100 Modelos!</strong></span>
+                            </li>
+                            <li class="buy__check-item">
+                                <span class="buy__check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </span>
+                                <span><strong>Bônus</strong> Tapetes de Crochê para Cozinha, Sala e Banheiro!</span>
+                            </li>
+                        </ul>
+
+                        <a href="https://stark-ofertas2.pay.yampi.com.br/r/G5DB5PINLL" target="_blank" rel="noopener"
+                            class="buy__cta">Quero Meus Tapetes Agora!</a>
+
+                        <!-- Payment Icons -->
+                        <div class="buy__payment">
+                            <span class="buy__payment-badge pix">PIX</span>
+                            <span class="buy__payment-badge visa">VISA</span>
+                            <span class="buy__payment-badge mc">Mastercard</span>
+                            <span class="buy__payment-badge">Amex</span>
+                            <span class="buy__payment-badge elo">Elo</span>
+                            <span class="buy__payment-badge boleto">Boleto</span>
+                        </div>
+
+                        <p class="buy__urgency">🚨 <strong>Vagas limitadas</strong> para garantir um acompanhamento
+                            personalizado. Faça parte das artesãs que não deixam dinheiro na mesa!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Countdown Script -->
+    <script>
+        (function () {
+            var totalSeconds = 15 * 60; // 15 minutes
+            var minEl = document.getElementById('cnt-min');
+            var secEl = document.getElementById('cnt-sec');
+            function tick() {
+                if (totalSeconds <= 0) { totalSeconds = 15 * 60; }
+                var m = Math.floor(totalSeconds / 60);
+                var s = totalSeconds % 60;
+                minEl.textContent = String(m).padStart(2, '0');
+                secEl.textContent = String(s).padStart(2, '0');
+                totalSeconds--;
+            }
+            tick();
+            setInterval(tick, 1000);
+        })();
+    </script>
+
+    <!-- ===== GUARANTEE SECTION ===== -->
+    <section class="guarantee">
+        <div class="guarantee__inner">
+
+            <!-- Left: seal on green background -->
+            <div class="guarantee__seal-col">
+                <img class="guarantee__seal"
+                    src="https://amigurumania.site/wp-content/webp-express/webp-images/uploads/2025/06/selo-de-garantia-7-dias-1.png.webp"
+                    alt="Selo de Garantia 7 dias" loading="lazy" />
+                <span class="guarantee__seal-label">Garantia oficial</span>
+            </div>
+
+            <!-- Right: text content -->
+            <div class="guarantee__content">
+                <p class="guarantee__eyebrow">🔒 Compra 100% segura</p>
+                <h2 class="guarantee__title">Satisfação total ou <span>Reembolso Completo</span></h2>
+                <p class="guarantee__text">
+                    <strong>Teste por 7 dias sem risco:</strong> se por qualquer motivo você não ficar satisfeita com a
+                    apostila, basta entrar em contato e devolvemos 100% do seu dinheiro &mdash; sem burocracia, sem
+                    perguntas.
+                </p>
+                <ul class="guarantee__bullets">
+                    <li class="guarantee__bullet">
+                        <span class="guarantee__bullet-dot">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        Reembolso em até 7 dias úteis
+                    </li>
+                    <li class="guarantee__bullet">
+                        <span class="guarantee__bullet-dot">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        Sem perguntas, sem burocracia
+                    </li>
+                    <li class="guarantee__bullet">
+                        <span class="guarantee__bullet-dot">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        Atendimento via WhatsApp e Email
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <p class="site-footer__text">
+            Copyright 2025 | Descomplica Amigurumi &ndash; Todos os direitos reservados
+        </p>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script>
+        var btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
